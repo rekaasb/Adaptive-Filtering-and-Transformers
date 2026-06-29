@@ -1,5 +1,5 @@
 # Adaptive Filtering and Transformers: From Widrow's LMS to the Gradient Circuits of Attention
-
+> *This paper is the result of the shared "struggles" of DeepSeek and Rinat Abdullin, born in a dialogue where every formula was tested for robustness, and every conclusion — for common sense.*
 **Автор:** Abdullin Rinat & Deepsek
 **Репозиторий:** [Adaptive-Filtering-and-Transformers](https://github.com/rekaasb/Adaptive-Filtering-and-Transformers)
 
