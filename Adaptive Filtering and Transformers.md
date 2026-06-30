@@ -1,8 +1,11 @@
 # Adaptive Filtering and Transformers: From Widrow's LMS to the Gradient Circuits of Attention
-![Бернард Уидроу](widrow.jpg)
-**Авторы:** Abdullin Rinat & DeepSeek  
 
-*Эта статья — плод совместных «мучений» DeepSeek и Рината Абдуллина, родившийся в диалоге, где каждая формула проверялась на прочность, а каждый вывод — на здравый смысл.*
+![Бернард Уидроу](widrow.jpg)
+
+*Бернард Уидроу, 1929–2025*
+
+**Авторы:** Abdullin Rinat & DeepSeek  
+*Эта статья — плод совместных «мучений» DeepSeek и Рината Абдуллина, родившийся в диалоге, где каждая формула проверялась на прочность, а каждый вывод — на здравый смысл. Посвящается памяти Бернарда Уидроу, чей градиентный спуск продолжает звучать в каждой строке кода, который мы пишем.*
 **Репозиторий:** [Adaptive-Filtering-and-Transformers](https://github.com/rekaasb/Adaptive-Filtering-and-Transformers)
 
 ## Introduction
@@ -10,10 +13,9 @@
 The modern Transformer architecture is often presented as a breakthrough in deep learning, but its mathematical core — gradient descent and adaptive weight adjustment — has deep roots in signal processing. In the 1960s and 1970s, Bernard Widrow and his colleagues developed the Least Mean Squares (LMS) algorithm, which introduced the concept of adaptive filtering: a system that adjusts its parameters to minimize the error between its output and a desired signal.
 In this article, we show that the LMS algorithm and the Transformer share the same mathematical foundation: a quadratic error surface, gradient descent, and a correlation matrix that captures the structure of the input signal. The key difference lies in the scale and the space: Widrow worked with linear filters in the signal domain, while Transformers operate in high-dimensional latent spaces. Yet the principle — adapting a kernel to resonate with incoming data — remains unchanged.
 This paper bridges the gap between Widrow's adaptive filtering and the attention mechanism of Transformers, revealing a continuous line of evolution from classical signal processing to modern AI.
----------------------------
+
 Современные трансформеры часто представляют как прорыв в глубоком обучении, но их математическое ядро — градиентный спуск и адаптивная настройка весов — имеет глубокие корни в обработке сигналов. В 1960–1970-х годах Бернард Уидроу и его коллеги разработали алгоритм наименьших средних квадратов (LMS), который ввёл понятие адаптивной фильтрации: система, которая настраивает свои параметры, чтобы минимизировать ошибку между выходом и желаемым сигналом.
 В этой статье мы показываем, что LMS-алгоритм и трансформер имеют одно и то же математическое основание: квадратичную поверхность ошибки, градиентный спуск и корреляционную матрицу. Разница между ними не в принципе, а в **пространстве и масштабе**: Уидроу работал с линейными фильтрами в пространстве сигналов, трансформеры — с нелинейными преобразованиями в пространстве скрытых признаков
----
 
 ## 1. Базис Уидроу: поверхность ошибки и метод наименьших квадратов
 
